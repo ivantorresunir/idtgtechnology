@@ -1,0 +1,30 @@
+.header{
+    background-color: var(--color-primary);
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: white;
+}
+
+.header__content{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.header__logo-tob-bar{
+    height: 50px;
+}
+
+.header__logo-avatar{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.header__label-avatar{
+    color:white;
+}
+
+.font-sizes-icon{
+    font-size: 2rem;
+    margin-left: 5px;
+}

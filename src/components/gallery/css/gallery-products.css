@@ -1,0 +1,23 @@
+.gallery-product {
+    display: grid;
+    justify-items: center;
+    gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.card-product{
+    background-color: transparent;
+    --bs-card-border-color: #transparent !important;
+}
+
+.size-img{
+    width: 100% !important;
+}
+
+.price-v{
+    color:limegreen;
+}
+
+.price-a{
+    color:red;
+}

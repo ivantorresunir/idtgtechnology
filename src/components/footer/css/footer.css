@@ -1,0 +1,10 @@
+.footer-form{
+    background-color: var(--color-primary);
+    border-top: 1px;
+    border-top-style: solid;
+    border-color: white;
+}
+
+.font-sizes-icon{
+    font-size: 2rem;
+}
