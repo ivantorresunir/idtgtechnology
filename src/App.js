@@ -14,10 +14,10 @@ import {CreateProduct} from "./pages/administration/create_product/js/create_pro
 
 const routes_menu = [
     {uri: '/', namePage: Start, menu: "Inicio"},
-    {uri: 'producto', namePage: Product, menu: 'Productos'},
-    {uri: 'nosotros', namePage: About_us, menu: 'Nosotros'},
-    {uri: 'contacto', namePage: Contact, menu: 'Contacto'},
-    {uri: 'crear_producto', namePage: CreateProduct, menu: 'Crear producto'}];
+    {uri: '/producto', namePage: Product, menu: 'Productos'},
+    {uri: '/nosotros', namePage: About_us, menu: 'Nosotros'},
+    {uri: '/contacto', namePage: Contact, menu: 'Contacto'},
+    {uri: '/crear_producto', namePage: CreateProduct, menu: 'Crear producto'}];
 
 
 export default function App() {
