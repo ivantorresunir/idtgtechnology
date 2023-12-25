@@ -1,3 +1,7 @@
+.navigation{
+    padding-left: 0 !important;
+}
+
 .navigation li{
     list-style:none;
     width: 100%;
