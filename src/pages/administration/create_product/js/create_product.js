@@ -19,6 +19,7 @@ let flagMostrar = false;
 
 const titleListModel = ['#', 'Referencia', 'Precio'];
 
+
 export const CreateProduct = () => {
 
     let products = useFetch('https://fakestoreapi.com/products');
