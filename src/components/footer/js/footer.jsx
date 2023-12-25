@@ -13,10 +13,10 @@ export const Footer = () => {
                         </h3>
                         <div className='row my-3'>
                             <div className='text-center'>
-                                <a className='text-white' href='https://instagram.com/atasportshop1?igshid=MzRlODBiNWFlZA=='>
+                                <a className='text-white' href='https://instagram.com'>
                                     <i className='bi-instagram mx-3 font-sizes-icon'></i>
                                 </a>
-                                <a href='https://www.facebook.com/profile.php?id=100074800135671' className='text-white'>
+                                <a href='https://www.facebook.com' className='text-white'>
                                     <i className='bi-facebook mx-3 font-sizes-icon'></i>
                                 </a>
                             </div>
