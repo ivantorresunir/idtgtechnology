@@ -21,17 +21,25 @@ export const CreateProduct = () => {
 
     let products = useFetch('https://fakestoreapi.com/products');
 
-    useEffect(() => {
-        if (products[0] !== null) {
-            products.map((element) => (
-                element.map((elementProduct) => (
-                    productList.push([elementProduct.id, elementProduct.title, '$' + elementProduct.price])
-                ))
-            ));
+    if (products[0] !== null) {
+        products.map((element) => (
+            element.map((elementProduct) => (
+                productList.push([elementProduct.id, elementProduct.title, '$' + elementProduct.price])
+            ))
+        ));
+    }
 
-            productList.sort(s => s.id);
-        }
-    });
+    // useEffect(() => {
+    //     if (products[0] !== null) {
+    //         products.map((element) => (
+    //             element.map((elementProduct) => (
+    //                 productList.push([elementProduct.id, elementProduct.title, '$' + elementProduct.price])
+    //             ))
+    //         ));
+    //
+    //         productList.sort(s => s.id);
+    //     }
+    // });
 
     if (products[0] !== null) {
         return (
