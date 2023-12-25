@@ -14,6 +14,8 @@ import {useFetch} from "../../../../hooks/fakestoreapi/fakestoreapi_customhook";
 
 let productList = [];
 
+let flagMostrar = false;
+
 
 const titleListModel = ['#', 'Referencia', 'Precio'];
 
@@ -21,27 +23,19 @@ export const CreateProduct = () => {
 
     let products = useFetch('https://fakestoreapi.com/products');
 
-    if (products[0] !== null) {
-        products.map((element) => (
-            element.map((elementProduct) => (
-                productList.push([elementProduct.id, elementProduct.title, '$' + elementProduct.price])
-            ))
-        ));
-    }
+    useEffect(() => {
+        if (products[0] !== null) {
+            products.map((element) => (
+                element.map((elementProduct) => (
+                    productList.push([elementProduct.id, elementProduct.title, '$' + elementProduct.price])
+                ))
+            ));
 
-    // useEffect(() => {
-    //     if (products[0] !== null) {
-    //         products.map((element) => (
-    //             element.map((elementProduct) => (
-    //                 productList.push([elementProduct.id, elementProduct.title, '$' + elementProduct.price])
-    //             ))
-    //         ));
-    //
-    //         productList.sort(s => s.id);
-    //     }
-    // });
+            flagMostrar = true;
+        }
+    });
 
-    if (products[0] !== null) {
+    if (flagMostrar) {
         return (
             <>
                 <div className='container-fluid'>
