@@ -3,16 +3,16 @@ import '../css/create_product.css';
 import {DataTable} from "../../../../components/data_table/js/data_table";
 import {useFetch} from "../../../../hooks/fakestoreapi/fakestoreapi_customhook";
 
-// const productList = [
-//     [1, 'Mouse', '$35.000', 'edit', 'create', 'view'],
-//     [2, 'Teclado', '$55.000', 'edit', 'create', 'view'],
-//     [2, 'Monitor', '$55.000', 'edit', 'create', 'view'],
-//     [2, 'UPS', '$75.000', 'edit', 'create', 'view'],
-//     [2, 'Portatil', '$505.000', 'edit', 'create', 'view'],
-//     [3, 'Pad Mouse', '$10.000', 'edit', 'create', 'view']
-// ];
+let productList = [
+    [21, 'Mouse', '$35.000', 'edit', 'create', 'view'],
+    [22, 'Teclado', '$55.000', 'edit', 'create', 'view'],
+    [23, 'Monitor', '$55.000', 'edit', 'create', 'view'],
+    [24, 'UPS', '$75.000', 'edit', 'create', 'view'],
+    [25, 'Portatil', '$505.000', 'edit', 'create', 'view'],
+    [26, 'Pad Mouse', '$10.000', 'edit', 'create', 'view']
+];
 
-const productList = [];
+// let productList = [];
 
 
 const titleListModel = ['#', 'Referencia', 'Precio'];
@@ -28,6 +28,8 @@ export const CreateProduct = () => {
                     productList.push([elementProduct.id, elementProduct.title, '$'+elementProduct.price])
                 ))
             ));
+
+            productList.sort(s => s.id);
         }
     });
 
