@@ -10,14 +10,14 @@ import {Start} from "./pages/start/js/strar";
 import {About_us} from "./pages/about_us/js/about_us";
 import {Contact} from "./pages/contact/js/contact";
 import {Product} from "./pages/product/js/product";
-// import {CreateProduct} from "./pages/administration/create_product/js/create_product";
+import {CreateProduct} from "./pages/administration/create_product/js/create_product";
 
 const routes_menu = [
     {uri: '/', namePage: Start, menu: "Inicio"},
     {uri: '/producto', namePage: Product, menu: 'Productos'},
     {uri: '/nosotros', namePage: About_us, menu: 'Nosotros'},
     {uri: '/contacto', namePage: Contact, menu: 'Contacto'},
-    // {uri: '/crear_producto', namePage: CreateProduct, menu: 'Crear producto'}
+    {uri: '/crear_producto', namePage: CreateProduct, menu: 'Crear producto'}
 ];
 
 

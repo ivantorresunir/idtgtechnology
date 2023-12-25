@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../css/create_product.css';
 import {DataTable} from "../../../../components/data_table/js/data_table";
 import {useFetch} from "../../../../hooks/fakestoreapi/fakestoreapi_customhook";
@@ -14,13 +14,12 @@ import {useFetch} from "../../../../hooks/fakestoreapi/fakestoreapi_customhook";
 
 let productList = [];
 
-let flagMostrar = false;
-
 
 const titleListModel = ['#', 'Referencia', 'Precio'];
 
 
 export const CreateProduct = () => {
+    const [isLoading, setIsLoading] = useState(false);
 
     let products = useFetch('https://fakestoreapi.com/products');
 
@@ -31,12 +30,11 @@ export const CreateProduct = () => {
                     productList.push([elementProduct.id, elementProduct.title, '$' + elementProduct.price])
                 ))
             ));
-
-            flagMostrar = true;
+            setIsLoading(true);
         }
-    });
+    }, [isLoading , products]);
 
-    if (flagMostrar) {
+    if (isLoading) {
         return (
             <>
                 <div className='container-fluid'>
