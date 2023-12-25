@@ -17,7 +17,7 @@ const routes_menu = [
     {uri: '/producto', namePage: Product, menu: 'Productos'},
     {uri: '/nosotros', namePage: About_us, menu: 'Nosotros'},
     {uri: '/contacto', namePage: Contact, menu: 'Contacto'},
-    {uri: '/crear_producto', namePage: CreateProduct, menu: 'Crear producto'}
+    {uri: '/listProductos', namePage: CreateProduct, menu: 'Lista de producto'}
 ];
 
 

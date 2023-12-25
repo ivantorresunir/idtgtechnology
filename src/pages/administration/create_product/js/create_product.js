@@ -38,7 +38,7 @@ export const CreateProduct = () => {
         return (
             <>
                 <div className='container-fluid'>
-                    <h1 className='text-center'>Creación de productos</h1>
+                    <h1 className='text-center'>Lista de productos</h1>
                     <DataTable title_list={titleListModel} body_list={productList}></DataTable>
                 </div>
             </>
